@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+:root{
+    --main-bg-color:#2870f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:var( --main-bg-color);
+    font-family: 'Roboto Mono', monospace;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 58px;
+}
+nav ul li{
+   
+    list-style: none;
+    padding: 0 15px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+nav{
+    display: flex;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 60px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input{
+    height: 28px;
+    width: 30vw;
+    margin:  0 15px 0 25px;
+    border-radius: 4px;
+    padding: 0 12px;
+}
+.search img{
+    position: absolute;
+    right: 0;
+    margin-right: 31px;
+    height: 25px;
+    width: 25px;
+    
+}
+.search button{
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh) ;
+}
+.slider {
+   display: flex;
+    margin: 13px 0 0 193px;
+    justify-content: center;
+    
+    
+}
+  @keyframes slider1 {
+    0%{
+        transform: translate(-25vw);
+        
+        
+    }
+    100%{
+        transform: translate(-4vw);
+    }
+}
+@keyframes slider2 {
+    0%{
+        transform: translate(-40vw);
+        
+        
+    }
+    100%{
+        transform: translate(-5vw);
+    }
+} 
+@keyframes slider3 {
+    0%{
+        transform: translate(-65vw);
+        
+        
+    }
+    100%{
+        transform: translate(-12vw);
+    }
+} 
+.im1{
+    transform: translate(-25vw);
+    animation: slider1 3s  2  forwards ;
+    margin: 0 33px;
+}
+.im2{
+    transform: translate(-40vw);
+    animation: slider2 3s  2  forwards ;
+    margin: 0 133px 0 0;
+}  
+  .im3{
+    transform: translate(-65vw);
+    animation: slider3 3s  2  forwards ;
+}   
+
+.card{
+    max-width: 90vw;
+    margin: 54px 90px;
+    font-family: 'Karla', sans-serif;
+    overflow: scroll
+   
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 27px;
+
+}
+.cards{
+    display: flex;
+}
+.my-2{
+    font-family: 'Karla', sans-serif;
+    margin: 15px 0;
+}
+.my-1{
+    margin: 5px 0;
+}
+.text-center{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--main-bg-color);
+    color: black;
+    height: 12vh;
+    font-family: 'Roboto Mono', monospace;
+}
